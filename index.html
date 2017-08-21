@@ -16,24 +16,24 @@
 
 
 		<header class="main-header">
+      <a class="main-logo">
+        <img src="img/index-logo.png" width="138" height="70" alt="City of Sedona">
+      </a>
 			<nav class="main-navigation">
-			<a class="main-logo">
-				<img src="img/index-logo.png" width="138" height="70" alt="City of Sedona">
-			</a>
-				<ul>
-					<li>
-						<a>Информация</a>
-					</li>
-					<li>
-						<a href="#">Фото и видео</a>
-					</li>
-					<li>
-						<a href="#">Карта штата</a>
-					</li>
-					<li>
-						<a href="hotels.html">Гостиницы</a>
-					</li>
-				</ul>
+  			<ul>
+  				<li>
+  					<a>Информация</a>
+  				</li>
+  				<li>
+  					<a href="#">Фото и видео</a>
+  				</li>
+  				<li>
+  					<a href="#">Карта штата</a>
+  				</li>
+  				<li>
+  					<a href="hotels.html">Гостиницы</a>
+  				</li>
+  			</ul>
 			</nav>
 		</header>
 
@@ -70,6 +70,7 @@
 
 
 			<section class="advantage-top">
+        <h2 class="visually-hidden"> Преимущество Седоны №1 </h2>
 				<div class="advantage-text-left">
 					<h3>Настоящий городок</h3>
 					<p class="advantage-number">№1</p>
@@ -85,12 +86,13 @@
 
 
 			<section class="recomendations-list">
+        <h2 class="visually-hidden"> Список рекомендаций </h2>
 				<ul>
 					<li class="recomendations-list-item icon-housing">
 						<h3>Жилье</h3>
 						<p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
 					</li>
-					<li class="recomendations-list-item icon-housing">
+					<li class="recomendations-list-item icon-food">
 						<h3>Еда</h3>
 						<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
 					</li>
@@ -106,6 +108,7 @@
 
 
 			<section class="advantage-bottom">
+        <h2 class="visually-hidden"> Преимущество Седоны №2 </h2>
 				<figure class="advantage-photo-left">
 					<img src="img/photo-left.jpg" width="800" height="256" alt="Мост дьявола">
 				</figure>
@@ -121,6 +124,7 @@
 
 
 			<section class="advantage-list">
+        <h2 class="visually-hidden"> Преимущества Седоны №3, 4, 5 </h2>
 				<ul>
 					<li class="advantage-list-item">
 						<h3>Небольшая площадь</h3>
@@ -145,6 +149,7 @@
 
 
 			<section class="hotel-search">
+        <h2 class="visually-hidden"> Поиск отеля в Седоне </h2>
 				<h3>Заинтересовались?</h3>
 				<p>Укажите предполагаемые даты поездки,
 					и&#160;мы&#160;покажем вам лучшие предложения гостиниц в Седоне</p>
@@ -162,26 +167,30 @@
 
 				<section class="hotel-search-popup">
 					<form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-				        <p class="date-checkin"> <label for="date-checkin">Дата заезда:</label>
-				          <input class="date-checkin" type="text" name="date-checkin" id="date-checkin" placeholder="24 апреля 2017">
-				        </p>
-				        <button type="button" class="-btn-calendar"> Календарь </button>
-				        <p class="date-checkout"> <label for="date-checkout">Дата выезда:</label>
-				          <input class="date-checkout" type="text" name="date-checkout" id="date-checkout" placeholder="4 июля 2017">
-				        </p>
-				        <button type="button" class="-btn-calendar"> Календарь </button>
-				        <button type="button" class="btn-minus"> - </button>
-				         <p class="number-adults"> <label for="number-adults">Взрослые:</label>
-				          <input class="number-adults" type="text" name="number-adults" id="number-adults"  placeholder="2">
-				        </p>
-				        <button type="button" class="btn-plus"> + </button>
-				        <button type="button" class="btn-minus"> - </button>
-				        <p class="number-children"> <label for="number-children">Дети:</label>
-				          <input class="number-children" type="text" name="number-children" id="number-children" placeholder="2">
-				        </p>
-				        <button type="button" class="btn-plus"> + </button>
-				         <button class="btn-seach btn" type="submit">Найти</button>
-		     		</form>
+				    <p class="date-checkin"> <label for="date-checkin">Дата заезда:</label>
+				      <input class="date-checkin" type="text" name="date-checkin" id="date-checkin" placeholder="24 апреля 2017">
+				    </p>
+				    <button type="button" class="-btn-calendar"> Календарь </button>
+
+				    <p class="date-checkout"> <label for="date-checkout">Дата выезда:</label>
+				      <input class="date-checkout" type="text" name="date-checkout" id="date-checkout" placeholder="4 июля 2017">
+				    </p>
+				    <button type="button" class="-btn-calendar"> Календарь </button>
+
+				    <button type="button" class="btn-minus"> - </button>
+				    <p class="number-adults"> <label for="number-adults">Взрослые:</label>
+				      <input class="number-adults" type="text" name="number-adults" id="number-adults"  placeholder="2">
+				    </p>
+            <button type="button" class="btn-plus"> + </button>
+
+            <button type="button" class="btn-minus"> - </button>
+				    <p class="number-children"> <label for="number-children">Дети:</label>
+				      <input class="number-children" type="text" name="number-children" id="number-children" placeholder="2">
+				    </p>
+				    <button type="button" class="btn-plus"> + </button>
+
+				    <button class="btn-seach btn" type="submit">Найти</button>
+		     	</form>
 				</section>
 
 			</article>
@@ -198,13 +207,13 @@
 			<section class="footer-social">
 				<ul>
 					<li> <a class="social-btn social-btn-twit" href="#">Twitter</a> </li>
-					<li> <a class="social-btn social-btn-fb" href="#">Фейсбук</a> </li>
+					<li> <a class="social-btn social-btn-fb" href="#">Facebook</a> </li>
 					<li> <a class="social-btn social-btn-yt" href="#">Youtube</a> </li>
 				</ul>
 			</section>
 			<section class="footer-copyright">
 				<span>Website by:</span>
-				<a class="footer-logo" href="https://htmlacademy.ru/intensive/htmlcss"> <img src="img/html-academy-logo.png" width="113" height="39" alt="HTML academy logo"> </a>
+				<a class="footer-logo" href="https://htmlacademy.ru/intensive/htmlcss"> <img src="img/logo-htmlacademy.svg" width="113" height="39" alt="HTML academy logo"> </a>
 			</section>
 		</footer>
 

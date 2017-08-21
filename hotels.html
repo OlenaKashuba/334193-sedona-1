@@ -15,24 +15,24 @@
 
       <header class="main-header">
         <a href="index.html" class="main-logo">
-            <img src="img/index-logo.png" width="138" height="70" alt="City of Sedona">
-          </a>
-          <nav class="main-navigation">
-            <ul>
-              <li>
-                <a href="index.html">Информация</a>
-              </li>
-              <li>
-                <a href="#">Фото и видео</a>
-              </li>
-              <li>
-                <a href="#">Карта штата</a>
-              </li>
-              <li>
-                <a class="active">Гостиницы</a>
-              </li>
-            </ul>
-          </nav>
+          <img src="img/index-logo.png" width="138" height="70" alt="City of Sedona">
+        </a>
+        <nav class="main-navigation">
+          <ul>
+            <li>
+              <a href="index.html">Информация</a>
+            </li>
+            <li>
+              <a href="#">Фото и видео</a>
+            </li>
+            <li>
+              <a href="#">Карта штата</a>
+            </li>
+            <li>
+              <a class="active">Гостиницы</a>
+            </li>
+          </ul>
+        </nav>
 
       </header>
 
@@ -49,39 +49,39 @@
 
             <fieldset class="filters-infrastructure">
               <legend>Инфраструктура</legend>
-                <ul>
-                  <li class="filter-option">
-                    <input type="checkbox" id="pool" name="infrastructure" checked>
-                    <label for="pool">Бассейн</label>
-                  </li>
-                  <li class="filter-option">
-                    <input type="checkbox" id="parking" name="infrastructure">
-                    <label for="parking">Парковка</label>
-                  </li>
-                  <li class="filter-option">
-                    <input type="checkbox" id="wifi" name="infrastructure">
-                    <label for="wifi">Wi-Fi</label>
-                  </li>
-                </ul>
+              <ul>
+                <li class="filter-option">
+                  <input type="checkbox" id="pool" name="infrastructure" checked>
+                  <label for="pool">Бассейн</label>
+                </li>
+                <li class="filter-option">
+                  <input type="checkbox" id="parking" name="infrastructure">
+                  <label for="parking">Парковка</label>
+                </li>
+                <li class="filter-option">
+                  <input type="checkbox" id="wifi" name="infrastructure">
+                  <label for="wifi">Wi-Fi</label>
+                </li>
+              </ul>
             </fieldset>
 
         <!-- FILTERS HOUSING TYPE -->
 
             <fieldset class="filters-housing-type">
               <legend>Тип жилья</legend>
-                <ul>
-                  <li class="filter-option">
-                    <input type="checkbox" id="hotel" name="housing-type"  checked>
-                    <label for="hotel">Гостиница</label>
-                  </li>
-                  <li class="filter-option">
-                    <input type="checkbox" id="motel" name="housing-type" checked>
-                    <label for="motel">Мотель</label>
-                  </li>
-                  <li class="filter-option">
-                    <input type="checkbox" id="apartments" name="housing-type" checked>
-                    <label for="apartments"> Апартаменты </label>
-                  </li>
+              <ul>
+                <li class="filter-option">
+                  <input type="checkbox" id="hotel" name="housing-type"  checked>
+                  <label for="hotel">Гостиница</label>
+                </li>
+                <li class="filter-option">
+                  <input type="checkbox" id="motel" name="housing-type" checked>
+                  <label for="motel">Мотель</label>
+                </li>
+                <li class="filter-option">
+                  <input type="checkbox" id="apartments" name="housing-type" checked>
+                  <label for="apartments"> Апартаменты </label>
+                </li>
               </ul>
             </fieldset>
 
@@ -96,17 +96,17 @@
                   <label class="min-price">от <input type="text" name="min-price" value="0"></label>
                 </li>
                 <li>
-                      <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
-                    </li>
+                  <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+                </li>
               </ul>
 
               <div class="range-controls">
-                    <div class="scale">
-                        <div class="bar"></div>
-                    </div>
-                    <div class="range-toggle range-toggle-min"></div>
-                    <div class="range-toggle range-toggle-max"></div>
-                  </div>
+                <div class="scale">
+                    <div class="bar"></div>
+                </div>
+                <div class="range-toggle range-toggle-min"></div>
+                <div class="range-toggle range-toggle-max"></div>
+              </div>
 
               <input class="btn btn-show" type="submit" value="Показать" name="show-button" >
             </fieldset>
@@ -152,11 +152,12 @@
 
 
         <section class="hotels">
+          <h2 class="visually-hidden"> Список отелей </h2>
 
           <article class="hotel-summary">
             <img src="img/hotel-amara.jpg"  width="135" height="90" alt="Amara Resort & Spa Photo">
 
-              <h2>Amara Resort &#38; Spa</h2>
+              <h3>Amara Resort &#38; Spa</h3>
               <b>Гостиница</b>
               <b> от 4000р. </b>
               <a class="btn btn-details" href="#">Подробнее </a>
@@ -172,7 +173,7 @@
           <article class="hotel-summary">
             <img src="img/hotel-desert.jpg"  width="135" height="90" alt="Desert Quail Inn Motel Photo">
 
-              <h2>Desert Quail Inn</h2>
+              <h3>Desert Quail Inn</h3>
               <b>Мотель</b>
               <b> от 3000р. </b>
               <a class="btn btn-details" href="#">Подробнее </a>
@@ -188,7 +189,7 @@
           <article class="hotel-summary">
             <img src="img/hotel-villas.jpg"  width="135" height="90" alt="Villas at Poco Diablo Photo">
 
-              <h2>Villas at Poco Diablo</h2>
+              <h3>Villas at Poco Diablo</h3>
               <b>Апартаменты</b>
               <b> от 2000р. </b>
               <a class="btn btn-details" href="#">Подробнее </a>
@@ -211,19 +212,15 @@
         <section class="footer-social">
           <ul>
             <li> <a class="social-btn social-btn-twit" href="#">Twitter</a> </li>
-            <li> <a class="social-btn social-btn-fb" href="#">Фейсбук</a> </li>
+            <li> <a class="social-btn social-btn-fb" href="#">Facebook</a> </li>
             <li> <a class="social-btn social-btn-yt" href="#">Youtube</a> </li>
           </ul>
         </section>
         <section class="footer-copyright">
           <span>Website by:</span>
-          <a class="footer-logo" href="https://htmlacademy.ru/intensive/htmlcss"> <img src="img/html-academy-logo.png" width="113" height="39" alt="HTML academy logo"> </a>
+          <a class="footer-logo" href="https://htmlacademy.ru/intensive/htmlcss"> <img src="img/logo-htmlacademy.svg" width="113" height="39" alt="HTML academy logo"> </a>
         </section>
       </footer>
-
-      <section>
-        <div>test</div>
-      </section>
 
     </div>
   </div>
