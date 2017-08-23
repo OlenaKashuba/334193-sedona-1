@@ -1,28 +1,293 @@
 /* Temporary styles*/
 
-body {
+html, body {
+	margin: 0;
+	padding: 0;
+
 	min-width: 1200px;
 	font-size: 14px;
 	line-height: 21px;
 	font-family: "PT Sans", "Arial", sans-serif;
 	font-weight: normal;
-	background-color: #ffffff;
-	color: #333333;
+	background-color: #f2f2f2;
+	color: #000000;
 	text-transform: uppercase;
 }
+
+.container {
+	width: 1200px;
+	margin: 0 auto;
+	background-color: #ffffff;
+	color: #000000;
+}
+
+a {
+	text-decoration: none;
+}
+
+.visually-hidden {
+	position: absolute;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	width: 1px;
+	margin: -1px;
+	padding: 0;
+	border: 0;
+}
+
+.main-navigation {
+	line-height: 26px;
+	color: #000000;
+	background-color: #ffffff;
+}
+
+.main-navigation ul {
+	list-style: none;
+}
+
+.main-navigation .text-left {
+	text-align: left;
+}
+
+.main-navigation .text-right {
+	text-align: right;
+}
+
+.main-navigation a {
+	color: #000000;
+}
+
+.inner-navigation a.active {
+	color: #766357;
+}
+
+.main-navigation a:hover,
+.main-navigation a:focus {
+	color: #81b3d2;
+}
+
+.main-navigation a:active {
+	color: rgba(0,0,0,0.3);
+}
+
+.main-navigation a.active:hover,
+.main-navigation a.active:focus,
+.main-navigation a.active:active {
+	color: #000000;
+}
+
+.inner-navigation a.active:hover,
+.inner-navigation a.active:focus,
+.inner-navigation a.active:active {
+	color: #766357;
+}
+
+.promo-picture {
+	height: 733px;
+	background:
+		url(../img/promo-bottom.png) left 507px no-repeat,
+		url(../img/promo-background.jpg) center no-repeat;
+}
+
+.promo-description {
+	left: 0;
+	bottom: -216px;
+	line-height: 26px;
+	text-align: center;
+}
+
+.promo-description h3 {
+	font-size: 21px;
+	font-weight: bold;
+}
+
+.advantage-text-left {
+	line-height: 21px;
+	color: #ffffff;
+	background-color: #81b3d2;
+	text-align: center;
+}
+
+.advantage-text-left h3 {
+	font-size: 21px;
+	font-weight: bold;
+}
+
+.recomendations-list ul {
+	list-style: none;
+}
+
+.recomendations-list {
+	line-height: 21px;
+	text-align: center;
+}
+
+.recomendations-list h3 {
+	font-size: 21px;
+	font-weight: bold;
+}
+
+.advantage-text-right {
+	line-height: 21px;
+	color: #ffffff;
+	background-color: #81b3d2;
+	text-align: center;
+}
+
+.advantage-text-right h3 {
+	font-size: 21px;
+	font-weight: bold;
+}
+
+.advantage-list ul {
+	list-style: none;
+}
+
+.advantage-list {
+	line-height: 21px;
+	text-align: center;
+	color: #000000;
+	background-color: #eeeeee;
+}
+
+.advantage-list h3 {
+	font-size: 21px;
+	font-weight: bold;
+}
+
+.hotel-search {
+	text-align: center;
+}
+
+.hotel-search h3 {
+	font-size: 30px;
+	line-height: 36px;
+	font-weight: bold;
+}
+
+.hotel-search p {
+	line-height: 24px;
+}
+
+.btn {
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: bold;
+
+	text-align: center;
+	color: #ffffff;
+	background-color: #766357;
+	border: none;
+	vertical-align: middle;
+	text-transform: uppercase;
+}
+
+.btn:hover,
+.btn:focus {
+	background-color: #604e43;
+}
+
+.btn:active {
+	background-color: #503e33;
+	color: rgba(255,255,255, 0.3);
+}
+
+.hotel-search-form p {
+	line-height: 26px;
+	font-weight: bold;
+}
+
+.hotel-search-form input {
+	font: inherit;
+	text-transform: uppercase;
+	background-color: #f2f2f2;
+	color: #000000;
+	border: none;
+}
+
+.hotel-search-form input:hover {
+	background-color: #ebebeb;
+}
+
+.hotel-search-form input:focus {
+	background-color: #ffffff;
+	outline: none;
+	border: 2px solid #ebebeb;
+}
+
+.hotel-search-form p button {
+	font: inherit;
+	background-color: #f2f2f2;
+	color: #a9a9a9;
+	border: none;
+}
+
+.hotel-search-form p button:hover,
+.hotel-search-form p button:focus {
+	color: #000000;
+	outline: none;
+}
+
+.hotel-search-form p button:active {
+	color: #81b3d2;
+}
+
+.btn-form-search {
+	background-color: #81b3d2;
+}
+
+.btn-form-search:hover,
+.btn-form-search:focus {
+	background-color: #669ec0;
+	outline: none;
+}
+
+.btn-form-search:active {
+	background-color: #5496bd;
+	color: rgba(255,255,255,0.3);
+}
+
+.main-footer {
+	background-color: rgba(255,255,255,0.7);
+	line-height: 26px;
+}
+
+.footer-social ul {
+	list-style: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 
 h2 {
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: bold;
-  background-color: #ffffff;
-  color: #333333;
+	background-color: #ffffff;
+	color: #333333;
 }
 
 h3 {
 	font-size: 21px;
 	line-height: 21px;
 	font-weight: bold;
-  background-color: #ffffff;
-  color: #333333;
+	background-color: #ffffff;
+	color: #333333;
 }
+
+*/

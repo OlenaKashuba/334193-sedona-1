@@ -4,8 +4,8 @@
 	<meta charset="utf-8">
 	<title>Седона - Visit Sedona</title>
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-		<!--<link href="css/normalize.css" rel="stylesheet">-->
-		<link href="css/style.css" rel="stylesheet">
+	<link href="css/normalize.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 	<div class="container">
@@ -16,24 +16,24 @@
 
 
 		<header class="main-header">
-      <a class="main-logo">
-        <img src="img/index-logo.png" width="138" height="70" alt="City of Sedona">
-      </a>
+			<a class="main-logo">
+				<img src="img/index-logo.png" width="138" height="70" alt="City of Sedona">
+			</a>
 			<nav class="main-navigation">
-  			<ul>
-  				<li>
-  					<a>Информация</a>
-  				</li>
-  				<li>
-  					<a href="#">Фото и видео</a>
-  				</li>
-  				<li>
-  					<a href="#">Карта штата</a>
-  				</li>
-  				<li>
-  					<a href="hotels.html">Гостиницы</a>
-  				</li>
-  			</ul>
+				<ul>
+					<li class="text-left">
+						<a class="active">Информация</a>
+					</li>
+					<li class="text-left">
+						<a href="#">Фото и видео</a>
+					</li>
+					<li class="text-right">
+						<a href="#">Карта штата</a>
+					</li>
+					<li class="text-right">
+						<a href="hotels.html">Гостиницы</a>
+					</li>
+				</ul>
 			</nav>
 		</header>
 
@@ -54,9 +54,9 @@
 
 
 			<section class="promo-description">
-				<h3 class="promo-description-top"> Седона - небольшой городок в Аризоне, заслуживающий большего!</h3>
+				<h3> Седона - небольшой городок в Аризоне, заслуживающий большего!</h3>
 
-				<p class="promo-description-bottom"> Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон! </p>
+				<p> Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон! </p>
 			</section>
 
 
@@ -70,7 +70,7 @@
 
 
 			<section class="advantage-top">
-        <h2 class="visually-hidden"> Преимущество Седоны №1 </h2>
+				<h2 class="visually-hidden"> Преимущество Седоны №1 </h2>
 				<div class="advantage-text-left">
 					<h3>Настоящий городок</h3>
 					<p class="advantage-number">№1</p>
@@ -86,7 +86,7 @@
 
 
 			<section class="recomendations-list">
-        <h2 class="visually-hidden"> Список рекомендаций </h2>
+				<h2 class="visually-hidden"> Список рекомендаций </h2>
 				<ul>
 					<li class="recomendations-list-item icon-housing">
 						<h3>Жилье</h3>
@@ -108,7 +108,7 @@
 
 
 			<section class="advantage-bottom">
-        <h2 class="visually-hidden"> Преимущество Седоны №2 </h2>
+				<h2 class="visually-hidden"> Преимущество Седоны №2 </h2>
 				<figure class="advantage-photo-left">
 					<img src="img/photo-left.jpg" width="800" height="256" alt="Мост дьявола">
 				</figure>
@@ -124,7 +124,7 @@
 
 
 			<section class="advantage-list">
-        <h2 class="visually-hidden"> Преимущества Седоны №3, 4, 5 </h2>
+				<h2 class="visually-hidden"> Преимущества Седоны №3, 4, 5 </h2>
 				<ul>
 					<li class="advantage-list-item">
 						<h3>Небольшая площадь</h3>
@@ -149,7 +149,7 @@
 
 
 			<section class="hotel-search">
-        <h2 class="visually-hidden"> Поиск отеля в Седоне </h2>
+				<h2 class="visually-hidden"> Поиск отеля в Седоне </h2>
 				<h3>Заинтересовались?</h3>
 				<p>Укажите предполагаемые даты поездки,
 					и&#160;мы&#160;покажем вам лучшие предложения гостиниц в Седоне</p>
@@ -165,32 +165,38 @@
 			<article class="map">
 				<img src="img/map.jpg" width="1200" height="593" alt="Карта">
 
-				<section class="hotel-search-popup">
+				<section class="hotel-search-form">
 					<form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-				    <p class="date-checkin"> <label for="date-checkin">Дата заезда:</label>
-				      <input class="date-checkin" type="text" name="date-checkin" id="date-checkin" placeholder="24 апреля 2017">
-				    </p>
-				    <button type="button" class="-btn-calendar"> Календарь </button>
+						<p class="date-checkin"> <label for="date-checkin">Дата заезда:</label>
+							<input class="date-checkin" type="text" name="date-checkin" id="date-checkin" placeholder="24 апреля 2017">
+							<button type="button" class="btn-calendar"> Календарь </button>
+						</p>
 
-				    <p class="date-checkout"> <label for="date-checkout">Дата выезда:</label>
-				      <input class="date-checkout" type="text" name="date-checkout" id="date-checkout" placeholder="4 июля 2017">
-				    </p>
-				    <button type="button" class="-btn-calendar"> Календарь </button>
 
-				    <button type="button" class="btn-minus"> - </button>
-				    <p class="number-adults"> <label for="number-adults">Взрослые:</label>
-				      <input class="number-adults" type="text" name="number-adults" id="number-adults"  placeholder="2">
-				    </p>
-            <button type="button" class="btn-plus"> + </button>
+						<p class="date-checkout"> <label for="date-checkout">Дата выезда:</label>
+							<input class="date-checkout" type="text" name="date-checkout" id="date-checkout" placeholder="4 июля 2017">
+							<button type="button" class="btn-calendar"> Календарь </button>
+						</p>
 
-            <button type="button" class="btn-minus"> - </button>
-				    <p class="number-children"> <label for="number-children">Дети:</label>
-				      <input class="number-children" type="text" name="number-children" id="number-children" placeholder="2">
-				    </p>
-				    <button type="button" class="btn-plus"> + </button>
 
-				    <button class="btn-seach btn" type="submit">Найти</button>
-		     	</form>
+
+						<p class="number-adults"> <label for="number-adults">Взрослые:</label>
+							<button type="button" class="btn-minus"> - </button>
+							<input class="number-adults" type="text" name="number-adults" id="number-adults"  placeholder="2">
+							<button type="button" class="btn-plus"> + </button>
+						</p>
+
+
+
+						<p class="number-children"> <label for="number-children">Дети:</label>
+							<button type="button" class="btn-minus"> - </button>
+							<input class="number-children" type="text" name="number-children" id="number-children" placeholder="2">
+							<button type="button" class="btn-plus"> + </button>
+						</p>
+
+
+						<button class="btn btn-form-search" type="submit">Найти</button>
+					</form>
 				</section>
 
 			</article>
