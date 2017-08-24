@@ -9,40 +9,40 @@
 </head>
 <body>
 	<div class="container">
-		<div class="inner-container">
 
 			<!-- HEADER (NAVIGATION, LOGO) -->
 
-			<header class="main-header">
-				<a href="index.html" class="main-logo">
-					<img src="img/index-logo.png" width="138" height="70" alt="City of Sedona">
-				</a>
-				<nav class="main-navigation inner-navigation">
-					<ul>
-						<li class="text-left">
-							<a href="index.html">Информация</a>
-						</li>
-						<li class="text-left">
-							<a href="#">Фото и видео</a>
-						</li>
-						<li class="text-right">
-							<a href="#">Карта штата</a>
-						</li>
-						<li class="text-right">
-							<a class="active">Гостиницы</a>
-						</li>
-					</ul>
-				</nav>
+		<header class="main-header">
+			<a href="index.html" class="main-logo">
+				<img src="img/index-logo.png" width="138" height="70" alt="City of Sedona">
+			</a>
+			<nav class="main-navigation inner-navigation">
+				<ul>
+					<li class="text-left">
+						<a href="index.html">Информация</a>
+					</li>
+					<li class="text-left">
+						<a href="#">Фото и видео</a>
+					</li>
+					<li class="text-right">
+						<a href="#">Карта штата</a>
+					</li>
+					<li class="text-right">
+						<a class="active">Гостиницы</a>
+					</li>
+				</ul>
+			</nav>
 
-				</header>
+		</header>
 
-				<main>
+		<main>
 
 
 		<!-- FILTERS BLOCK (FORM) -->
 
 
-				<section class="filters">
+			<section class="filters">
+				<div class="inner-container">
 					<form class="filters-form" action="https://echo.htmlacademy.ru" method="post">
 
 					<!-- FILTERS INFRASTRUCTURE -->
@@ -91,7 +91,7 @@
 
 						<fieldset class="filters-range">
 							<legend>Стоимость в сутки (р):</legend>
-							<ul>
+							<ul class="price-controls">
 								<li>
 									<label class="min-price">от <input type="text" name="min-price" value="0"></label>
 								</li>
@@ -112,20 +112,21 @@
 						</fieldset>
 
 					</form>
-				</section>
+				</div>
+			</section>
 
 
 		<!-- FOUND -->
 
 
-				<section class="found-sorting">
-
+			<section class="found-sorting">
+				<div class="inner-container">
 					<b>Найдено: 3</b>
 					<p> Сортировка: </p>
 
 					<ul class="found-sorting-list">
 						<li class="found-sorting-item">
-							<a class="sorting-item-active" href="#">По цене </a>
+							<a class="active">По цене </a>
 						</li>
 						<li class="found-sorting-item">
 							<a href="#"> По типу </a>
@@ -137,75 +138,82 @@
 
 					<ul class="hotels-buttons">
 						<li>
-							<a href="#" class="btn-small-up" > Up </a>
+							<a href="#" class="btn-sort-up" > Up </a>
 						</li>
 						<li>
-							<a href="#" class="btn-small-down active"> Down</a>
+							<a class="btn-sort-down active"> Down </a>
 						</li>
 					</ul>
-
-				</section>
-
-
-
-		<!-- HOTELS -->
+				</div>
+			</section>
 
 
-				<section class="hotels">
-					<h2 class="visually-hidden"> Список отелей </h2>
 
-					<article class="hotel-summary">
+		<!-- HOTELS LIST -->
+
+
+			<section class="hotels">
+				<h2 class="visually-hidden"> Список отелей </h2>
+
+				<article class="hotel-summary">
+					<div class="inner-container">
 						<img src="img/hotel-amara.jpg"  width="135" height="90" alt="Amara Resort & Spa Photo">
 
-							<h3>Amara Resort &#38; Spa</h3>
-							<b>Гостиница</b>
-							<b> от 4000р. </b>
-							<a class="btn btn-details" href="#">Подробнее </a>
-							<a class="btn btn-book" href="#">Забронировать</a>
+						<h3><a href="#"> Amara Resort &#38; Spa</a></h3>
+						<b>Гостиница</b>
+						<b> от 4000р. </b>
+						<a class="btn btn-details" href="#">Подробнее </a>
+						<a class="btn btn-book" href="#">Забронировать</a>
 
-							<span class="rating-stars 4-stars"> </span>
-							<span class="hotel-rating-number">
-								Рейтинг: 8,5
-							</span>
-					</article>
+						<span class="rating-stars 4-stars"> </span>
+						<span class="hotel-rating-number">
+							Рейтинг: 8,5
+						</span>
+					</div>
+				</article>
 
 
-					<article class="hotel-summary">
+				<article class="hotel-summary">
+					<div class="inner-container">
 						<img src="img/hotel-desert.jpg"  width="135" height="90" alt="Desert Quail Inn Motel Photo">
 
-							<h3>Desert Quail Inn</h3>
-							<b>Мотель</b>
-							<b> от 3000р. </b>
-							<a class="btn btn-details" href="#">Подробнее </a>
-							<a class="btn btn-book" href="#">Забронировать</a>
+						<h3><a href="#"> Desert Quail Inn</a></h3>
+						<b>Мотель</b>
+						<b> от 3000р. </b>
+						<a class="btn btn-details" href="#">Подробнее </a>
+						<a class="btn btn-book" href="#">Забронировать</a>
 
-							<span class="rating-stars 3-stars"> </span>
-							<span class="hotel-rating-number">
-										Рейтинг: 8,9
-							</span>
-					</article>
+						<span class="rating-stars 3-stars"> </span>
+						<span class="hotel-rating-number">
+									Рейтинг: 8,9
+						</span>
+					</div>
+				</article>
 
 
-					<article class="hotel-summary">
+				<article class="hotel-summary">
+					<div class="inner-container">
 						<img src="img/hotel-villas.jpg"  width="135" height="90" alt="Villas at Poco Diablo Photo">
 
-							<h3>Villas at Poco Diablo</h3>
-							<b>Апартаменты</b>
-							<b> от 2000р. </b>
-							<a class="btn btn-details" href="#">Подробнее </a>
-							<a class="btn btn-book" href="#">Забронировать</a>
+						<h3><a href="#"> Villas at Poco Diablo</a></h3>
+						<b>Апартаменты</b>
+						<b> от 2000р. </b>
+						<a class="btn btn-details" href="#">Подробнее </a>
+						<a class="btn btn-book" href="#">Забронировать</a>
 
-							<span class="rating-stars 2-stars"> </span>
-							<span class="hotel-rating-number">
-									Рейтинг: 9,2
-							</span>
-					</article>
+						<span class="rating-stars 2-stars"> </span>
+						<span class="hotel-rating-number">
+								Рейтинг: 9,2
+						</span>
+					<div>
+				</article>
 
-				</section>
+			</section>
 
-			</main>
+		</main>
 
 	<!-- FOOTER -->
+
 
 			<footer class="main-footer inner-footer">
 				<p class="footer-contacts"> #visitsedona </p>
@@ -222,7 +230,7 @@
 				</section>
 			</footer>
 
-		</div>
+
 	</div>
 </body>
 </html>
