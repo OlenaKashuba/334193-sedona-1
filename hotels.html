@@ -48,7 +48,7 @@
 					<!-- FILTERS INFRASTRUCTURE -->
 
 						<fieldset class="filters-infrastructure">
-							<legend>Инфраструктура</legend>
+							<legend>Инфраструктура:</legend>
 							<ul>
 								<li class="filter-option">
 									<input type="checkbox" id="pool" name="infrastructure" checked>
@@ -68,7 +68,7 @@
 				<!-- FILTERS HOUSING TYPE -->
 
 						<fieldset class="filters-housing-type">
-							<legend>Тип жилья</legend>
+							<legend>Тип жилья:</legend>
 							<ul>
 								<li class="filter-option">
 									<input type="checkbox" id="hotel" name="housing-type"  checked>
@@ -120,8 +120,9 @@
 
 
 			<section class="found-sorting">
-				<div class="inner-container">
+				<div class="inner-container found-flex">
 					<b>Найдено: 3</b>
+
 					<p> Сортировка: </p>
 
 					<ul class="found-sorting-list">
@@ -135,6 +136,7 @@
 							<a href="#"> По рейтингу </a>
 						</li>
 					</ul>
+
 
 					<ul class="hotels-buttons">
 						<li>
@@ -158,14 +160,16 @@
 				<article class="hotel-summary">
 					<div class="inner-container">
 						<img src="img/hotel-amara.jpg"  width="135" height="90" alt="Amara Resort & Spa Photo">
-
-						<h3><a href="#"> Amara Resort &#38; Spa</a></h3>
-						<b>Гостиница</b>
-						<b> от 4000р. </b>
-						<a class="btn btn-details" href="#">Подробнее </a>
-						<a class="btn btn-book" href="#">Забронировать</a>
-
-						<span class="rating-stars 4-stars"> </span>
+						<div class="hotel-description">
+							<h3><a href="#"> Amara Resort &#38; Spa</a></h3>
+							<b>Гостиница</b>
+							<b> от 4000р. </b>
+							<div class="hotel-summary-buttons">
+							<a class="btn btn-details" href="#">Подробнее </a>
+							<a class="btn btn-book" href="#">Забронировать</a>
+							</div>
+						</div>
+						<span class="rating-stars stars-4"> </span>
 						<span class="hotel-rating-number">
 							Рейтинг: 8,5
 						</span>
@@ -176,14 +180,16 @@
 				<article class="hotel-summary">
 					<div class="inner-container">
 						<img src="img/hotel-desert.jpg"  width="135" height="90" alt="Desert Quail Inn Motel Photo">
-
-						<h3><a href="#"> Desert Quail Inn</a></h3>
-						<b>Мотель</b>
-						<b> от 3000р. </b>
-						<a class="btn btn-details" href="#">Подробнее </a>
-						<a class="btn btn-book" href="#">Забронировать</a>
-
-						<span class="rating-stars 3-stars"> </span>
+						<div class="hotel-description">
+							<h3><a href="#"> Desert Quail Inn</a></h3>
+							<b>Мотель</b>
+							<b> от 3000р. </b>
+							<div class="hotel-summary-buttons">
+							<a class="btn btn-details" href="#">Подробнее </a>
+							<a class="btn btn-book" href="#">Забронировать</a>
+							</div>
+						</div>
+						<span class="rating-stars stars-3"> </span>
 						<span class="hotel-rating-number">
 									Рейтинг: 8,9
 						</span>
@@ -194,14 +200,17 @@
 				<article class="hotel-summary">
 					<div class="inner-container">
 						<img src="img/hotel-villas.jpg"  width="135" height="90" alt="Villas at Poco Diablo Photo">
+						<div class="hotel-description">
+							<h3><a href="#"> Villas at Poco Diablo</a></h3>
+							<b>Апартаменты</b>
+							<b> от 2000р. </b>
+							<div class="hotel-summary-buttons">
+							<a class="btn btn-details" href="#">Подробнее </a>
+							<a class="btn btn-book" href="#">Забронировать</a>
+							</div>
 
-						<h3><a href="#"> Villas at Poco Diablo</a></h3>
-						<b>Апартаменты</b>
-						<b> от 2000р. </b>
-						<a class="btn btn-details" href="#">Подробнее </a>
-						<a class="btn btn-book" href="#">Забронировать</a>
-
-						<span class="rating-stars 2-stars"> </span>
+						</div>
+						<span class="rating-stars stars-2"> </span>
 						<span class="hotel-rating-number">
 								Рейтинг: 9,2
 						</span>
@@ -225,7 +234,7 @@
 					</ul>
 				</section>
 				<section class="footer-copyright">
-					<span>Website by:</span>
+					<span>Website by</span>
 					<a class="footer-logo" href="https://htmlacademy.ru/intensive/htmlcss"> <img src="img/logo-htmlacademy.svg" width="113" height="39" alt="HTML academy logo"> </a>
 				</section>
 			</footer>
