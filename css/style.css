@@ -5,7 +5,7 @@ html, body {
 	min-width: 1200px;
 	font-size: 14px;
 	line-height: 21px;
-	font-family: "PT Sans", "Arial", sans-serif;
+	font-family: "PT Sans", Arial, sans-serif;
 	font-weight: normal;
 	background-color: #f2f2f2;
 	color: #000000;
@@ -392,7 +392,7 @@ img {
 	font-weight: bold;
 }
 
-.hotel-search-form p label {
+.hotel-search-form label {
 	box-sizing: border-box;
 	display: inline-block;
 	vertical-align: middle;
@@ -533,7 +533,7 @@ img {
 
 .filters {
 	box-sizing: border-box;
-	background-color: #555c64; /* temporarily */
+	background-color: #555c64;
 	background:
 		url(../img/filter-background.jpg) center no-repeat;
 	color: #ffffff;
@@ -544,6 +544,7 @@ img {
 
 .filters-form {
 	display: flex;
+	justify-content: space-between;
 }
 
 .filters-form fieldset {
@@ -580,18 +581,108 @@ img {
 }
 
 .filters-form .filters-housing-type {
-	margin-right: 245px;
+	flex-grow: 1;
 }
 
 .filters-range {
 	width: 330px;
 }
 
+.price-controls {
+	position: relative;
+	height: 36px;
+	margin-bottom: 20px;
+	border: 2px solid #ffffff;
+	border-radius: 2px;
+	font-size: 0;
+}
+
+.price-controls::after {
+	content:"";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 2px;
+	height: 22px;
+	background-color: #ffffff;
+}
+
+.price-controls label {
+	display: inline-block;
+	vertical-align: top;
+	font-size: 14px;
+	line-height: 38px;
+	cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+  width: 90px;
+  padding-left: 65px;
+}
+
+.price-controls input {
+  width: 50px;
+  margin: 0;
+  color: inherit;
+  font: inherit;
+  background: none;
+  border: none;
+}
+
+.range-controls {
+	position: relative;
+	margin-bottom: 32px;
+}
+
+.range-controls .scale {
+	height: 2px;
+	background: rgba(255,255,255,0.3);
+}
+
+.range-controls .bar {
+	height: 2px;
+	width: 80%;
+	background: #ffffff;
+}
+
+.range-toggle {
+	position: absolute;
+	top: -9px;
+	width: 4px;
+	height: 4px;
+	background: #ababab;
+	border: 8px solid #ffffff;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.range-toggle:hover {
+	top: -10px;
+	border: 9px solid #ffffff;
+}
+
+.range-toggle-min {
+	left: 0;
+}
+
+.range-toggle-max {
+	left: 80%;
+}
+
 .btn-show {
+	display: block;
+	margin: 0 auto;
+	padding: 6px 35px;
+	font-size: 14px;
+	line-height: 21px;
 	border: 2px solid #ffffff;
 	color: #ffffff;
 	background-color: transparent;
 	font-weight: normal;
+	border-radius: 2px;
+	cursor: pointer;
 }
 
 .btn-show:hover,
@@ -862,59 +953,66 @@ img {
 	/*FOOTERS*/
 
 
-.main-footer {
-	position: absolute;
-	bottom: 6px;
-	left: 0;
-	background-color: rgba(255,255,255,0.7);
-	width: 100%;
-	line-height: 26px;
-	display: flex;
-	justify-content: space-between;
-	min-height: 120px;
-	align-items: center;
+ .main-footer {
+ 	position: absolute;
+ 	bottom: 6px;
+ 	left: 0;
+  	background-color: rgba(255,255,255,0.7);
+ 	width: 100%;
+  	line-height: 26px;
+ 	display: flex;
+ 	justify-content: space-between;
+ 	min-height: 120px;
+ 	align-items: center;
 
 }
-
 .footer-contacts {
 	width: 240px;
 	margin-left: 73px;
 	text-align: center;
 }
-
 .footer-social {
 	width: 150px;
 }
 
 .footer-social ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	align-items: center;
+  	list-style: none;
+  	margin: 0 auto;
+  	padding: 0;
+  	display: flex;
+  	justify-content: space-between;
+  	flex-wrap: wrap;
+}
+.social-btn {
+  	width: 46px;
+  	height: 48px;
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	background-color: #81b3d2;
 }
 
-.footer-social li {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 46px;
-	height: 48px;
-	background-color: #81b3d2;
+.social-btn:hover,
+.social-btn:focus {
+	background-color: #669ec0;
+}
+
+.social-btn:active path{
+	background-color: #5496bd;
+	fill: rgba(136,182,209,0.3);
 }
 
 .footer-copyright {
-	width: 240px;
-	text-align: center;
-	margin-right: 73px;
-	display: flex;
-	align-items: center;
+ 	width: 240px;
+ 	text-align: center;
+ 	margin-right: 73px;
+ 	display: flex;
+ 	align-items: center;
 }
 
 .footer-copyright span {
 	margin-right: 5px;
+	margin-left: 15px;
 }
 
 .footer-logo:hover path,
