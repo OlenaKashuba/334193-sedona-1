@@ -594,7 +594,7 @@ img {
 	content: "";
 	position: absolute;
 	top: 3px;
-	left: -1px;
+	left: 0px;
 	width: 23px;
 	height: 23px;
 	background-image: url("../img/checkbox-off.svg");
@@ -632,7 +632,7 @@ img {
 	background-image: url("../img/checkbox-on-disabled.svg");
 }
 
-.filters-form fieldset legend {
+.filters-form legend {
 	font-size: 16px;
 	font-weight: bold;
 	padding: 0;
@@ -649,12 +649,16 @@ img {
 }
 
 .filters-range {
-	width: 330px;
+	width: 318px;
+}
+
+.filters-range legend {
+	margin-bottom: 11px;
 }
 
 .price-controls {
 	position: relative;
-	height: 36px;
+	height: 31px;
 	margin-bottom: 20px;
 	border: 2px solid #ffffff;
 	border-radius: 2px;
@@ -676,14 +680,18 @@ img {
 	display: inline-block;
 	vertical-align: top;
 	font-size: 14px;
-	line-height: 38px;
+	line-height: 31px;
 	cursor: pointer;
 }
 
-.price-controls .min-price,
-.price-controls .max-price {
+.price-controls .min-price {
   width: 90px;
   padding-left: 65px;
+}
+
+.price-controls .max-price {
+	width: 90px;
+	padding-left: 56px;
 }
 
 .price-controls input {
@@ -738,7 +746,7 @@ img {
 .btn-show {
 	display: block;
 	margin: 0 auto;
-	padding: 6px 35px;
+	padding: 6px 34px;
 	font-size: 14px;
 	line-height: 21px;
 	border: 2px solid #ffffff;
@@ -790,6 +798,7 @@ img {
 
 .found-sorting p {
 	margin-right: 37px;
+	margin-left: 13px;
 }
 
 .found-sorting ul {
@@ -835,8 +844,9 @@ img {
 
 .hotels-buttons {
 	display: flex;
-	width: 40px;
+	width: 35px;
 	flex-direction: row;
+	justify-content: space-between;
 }
 
 .btn-sort-up {
@@ -847,7 +857,6 @@ img {
 	border-bottom: 11px solid #cacaca;
 	display: inline-block;
 	vertical-align: middle;
-	margin-right: 5px;
 }
 
 .btn-sort-down {
@@ -936,8 +945,8 @@ img {
 	display: inline-block;
 	font-weight: normal;
 	margin: 0;
-	margin-top: 4px;
-	margin-bottom: 12px;
+	margin-top: 2px;
+	margin-bottom: 17px;
 }
 
 .hotel-description .housing-type {
@@ -957,10 +966,7 @@ img {
 	font-size: 14px;
 	line-height: 21px;
 	font-weight: bold;
-	padding-top: 7px;
-	padding-bottom: 7px;
-	padding-left: 16px;
-	padding-right: 16px;
+	padding: 4px 16px;
 }
 
 .btn-details {
@@ -1008,10 +1014,7 @@ img {
 .hotel-rating-number {
 	color: #666666;
 	background-color: #f2f2f2;
-	padding-top: 7px;
-	padding-bottom: 7px;
-	padding-left: 16px;
-	padding-right: 16px;
+	padding: 3px 13px;
 }
 
 	/*FOOTERS*/
@@ -1028,13 +1031,19 @@ img {
  	justify-content: space-between;
  	min-height: 120px;
  	align-items: center;
-
 }
+
 .footer-contacts {
+	box-sizing: border-box;
 	width: 240px;
 	margin-left: 73px;
 	text-align: center;
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: bold;
+	padding-left: 15px;
 }
+
 .footer-social {
 	width: 150px;
 }
