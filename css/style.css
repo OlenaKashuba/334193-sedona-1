@@ -395,7 +395,7 @@ img {
 	margin: 0 auto;
 	padding-left: 56px;
 	padding-right: 56px;
-	padding-top: 43px;
+	padding-top: 55px;
 	padding-bottom: 55px;
 	background-color: #ffffff;
 	color: #000000;
@@ -403,8 +403,10 @@ img {
 
 
 .hotel-search-form p {
+	margin: 0;
 	line-height: 26px;
 	font-weight: bold;
+	margin-bottom: 30px;
 }
 
 .hotel-search-form label {
@@ -515,7 +517,7 @@ img {
 	margin: 0 auto;
 	min-height: 58px;
 	vertical-align: middle;
-	margin-top: 55px;
+	margin-top: 23px;
 }
 
 .btn-form-search:hover,
@@ -550,7 +552,7 @@ img {
 	box-sizing: border-box;
 	background-color: #555c64;
 	background:
-		url(../img/filter-background.jpg) center no-repeat;
+		url(../img/filter-background.jpg) 0 -56px no-repeat;
 	color: #ffffff;
 	min-height: 217px;
 	padding-top: 27px;
@@ -1084,7 +1086,7 @@ img {
 }
 
 .footer-copyright span {
-	margin-right: 5px;
+	margin-right: 9px;
 	margin-left: 15px;
 }
 
