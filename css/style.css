@@ -3,21 +3,26 @@ html, body {
 	padding: 0;
 
 	min-width: 1200px;
-	font-size: 14px;
-	line-height: 21px;
+
 	font-family: "PT Sans", Arial, sans-serif;
 	font-weight: normal;
-	background-color: #f2f2f2;
+	font-size: 14px;
+	line-height: 21px;
 	color: #000000;
 	text-transform: uppercase;
+
+	background-color: #f2f2f2;
 }
 
 .container {
+	position: relative;
+
 	width: 1200px;
 	margin: 0 auto;
-	background-color: #ffffff;
+
 	color: #000000;
-	position: relative;
+
+	background-color: #ffffff;
 	box-shadow: 0 0 20px rgba(0,0,0,0.3);
 }
 
@@ -31,8 +36,8 @@ a {
 }
 
 img {
-  max-width: 100%;
-  height: auto;
+	max-width: 100%;
+	height: auto;
 }
 
 .visually-hidden {
@@ -57,17 +62,18 @@ img {
 }
 
 .main-navigation ul {
-	background-color: #ffffff;
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	padding-right: 73px;
-	padding-left: 73px;
-	min-height: 56px;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
 
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	padding-right: 73px;
+	padding-left: 73px;
+	min-height: 56px;
+
+	background-color: #ffffff;
 }
 
 .main-logo {
@@ -123,27 +129,27 @@ img {
 .promo-picture {
 	height: 508px;
 	background:
-		url(../img/promo-bottom.png) left 451px no-repeat,
-		url(../img/promo-background.jpg) 0 -56px no-repeat;
+		url("../img/promo-bottom.png") left 451px no-repeat,
+		#47759c url("../img/promo-background.jpg") 0 -56px no-repeat;
 }
 
 .promo-description {
-	background-color: #ffffff;
 	box-sizing: border-box;
 	min-height: 216px;
 	line-height: 26px;
-	text-align: center;
 	padding-top: 60px;
 	padding-bottom: 50px;
+	text-align: center;
+	background-color: #ffffff;
 }
 
 .promo-description h3 {
-	font-size: 21px;
-	font-weight: bold;
 	margin: 0;
 	margin-bottom: 27px;
 	padding-right: 380px;
 	padding-left: 380px;
+	font-size: 21px;
+	font-weight: bold;
 }
 
 .promo-description p {
@@ -154,21 +160,22 @@ img {
 
 
 	/* ADVANTAGES, RECOMENDATIONS */
+.advantage-top,
+.advantage-bottom {
+	display: flex;
+	background-color: #81b3d2;
+}
 
 .advantage-photo-right,
 .advantage-photo-left {
 	margin: 0;
 }
 
-.advantage-top {
-	display: flex;
-}
-
 .advantage-text-left,
 .advantage-text-right {
-	min-height: 256px;
-	width: 400px;
 	box-sizing: border-box;
+	width: 400px;
+	min-height: 256px;
 	padding-right: 42px;
 	padding-left: 42px;
 }
@@ -178,13 +185,11 @@ img {
 	margin: 0;
 	margin-top: 47px;
 	margin-bottom: 23px;
+	padding-left: 50px;
+	padding-right: 50px;
 	font-size: 21px;
 	font-weight: bold;
 	text-align: center;
-	padding-left: 50px;
-	padding-right: 50px;
-	text-align: center;
-
 }
 
 .advantage-bottom .advantage-number,
@@ -198,31 +203,26 @@ img {
 	vertical-align: top;
 }
 
-.advantage-bottom {
-	display: flex;
-}
-
 .advantage-text-left,
 .advantage-text-right {
 	line-height: 21px;
 	color: #ffffff;
-	background-color: #81b3d2;
 	text-align: center;
 }
 
 .recomendations-list {
-	line-height: 21px;
-	text-align: center;
 	padding-top: 60px;
 	padding-bottom: 81px;
+	line-height: 21px;
+	text-align: center;
 }
 
 .recomendations-list h3 {
-	font-size: 21px;
-	font-weight: bold;
 	margin: 0;
 	margin-top: 101px;
 	margin-bottom: 25px;
+	font-size: 21px;
+	font-weight: bold;
 }
 
 .icon-housing {
@@ -244,10 +244,10 @@ img {
 }
 
 .recomendations-list ul {
-	list-style: none;
+	display: flex;
 	margin: 0;
 	padding: 0;
-	display: flex;
+	list-style: none;
 }
 
 .recomendations-list-item {
@@ -262,10 +262,10 @@ img {
 
 
 .advantage-list ul {
-	list-style: none;
+	display: flex;
 	margin: 0;
 	padding: 0;
-	display: flex;
+	list-style: none;
 }
 
 .advantage-list {
@@ -284,13 +284,13 @@ img {
 }
 
 .advantage-list-item h3 {
-	font-size: 21px;
-	font-weight: bold;
 	margin: 0;
 	margin-top: 47px;
 	margin-bottom: 24px;
 	padding-left: 70px;
 	padding-right: 70px;
+	font-size: 21px;
+	font-weight: bold;
 }
 
 .advantage-list-item .advantage-number {
@@ -304,7 +304,6 @@ img {
 	margin-left: 4px;
 	vertical-align: middle;
 }
-
 
 
 	/* HOTEL SEARCH */
@@ -345,7 +344,7 @@ img {
 	color: #ffffff;
 	background-color: #766357;
 	border: none;
-	vertical-align: middle;
+
 	text-transform: uppercase;
 	cursor: pointer;
 }
