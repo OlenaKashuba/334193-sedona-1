@@ -160,43 +160,44 @@ img {
 	margin: 0;
 }
 
-.advantage-text-left,
-.advantage-text-right {
+.advantage-top .advantage,
+.advantage-bottom .advantage {
 	box-sizing: border-box;
 	width: 400px;
 	min-height: 256px;
 	padding-right: 42px;
 	padding-left: 42px;
-}
-
-.advantage-text-left h3,
-.advantage-text-right h3 {
-	margin: 0;
-	margin-top: 47px;
-	margin-bottom: 23px;
-	padding-left: 50px;
-	padding-right: 50px;
-	font-size: 21px;
-	font-weight: bold;
+	line-height: 21px;
+	color: #ffffff;
 	text-align: center;
 }
 
-.advantage-bottom .advantage-number,
-.advantage-top .advantage-number {
+.advantage h3 {
+	margin: 0;
+	margin-top: 47px;
+	margin-bottom: 24px;
+	padding-left: 70px;
+	padding-right: 70px;
+	font-size: 21px;
+	font-weight: bold;
+}
+
+.advantage-number {
 	margin-bottom: 20px;
+}
+
+.advantage-number::before,
+.advantage-number::after {
+	content: "—";
+	margin-right: 4px;
+	margin-left: 4px;
+	vertical-align: middle;
 }
 
 .advantage-photo-right img,
 .advantage-photo-left img {
 	display: inline-block;
 	vertical-align: top;
-}
-
-.advantage-text-left,
-.advantage-text-right {
-	line-height: 21px;
-	color: #ffffff;
-	text-align: center;
 }
 
 .recomendations-list {
@@ -249,21 +250,15 @@ img {
 	margin: 0;
 }
 
-.advantage-list ul {
-	display: flex;
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
-
 .advantage-list {
 	line-height: 21px;
 	text-align: center;
 	color: #000000;
 	background-color: #eeeeee;
+	display: flex;
 }
 
-.advantage-list-item {
+.advantage-list .advantage {
 	box-sizing: border-box;
 	width: 400px;
 	padding-bottom: 45px;
@@ -271,27 +266,7 @@ img {
 	padding-right: 55px;
 }
 
-.advantage-list-item h3 {
-	margin: 0;
-	margin-top: 47px;
-	margin-bottom: 24px;
-	padding-left: 70px;
-	padding-right: 70px;
-	font-size: 21px;
-	font-weight: bold;
-}
 
-.advantage-list-item .advantage-number {
-	margin-bottom: 20px;
-}
-
-.advantage-number::before,
-.advantage-number::after {
-	content: "—";
-	margin-right: 4px;
-	margin-left: 4px;
-	vertical-align: middle;
-}
 
 		/* HOTEL SEARCH */
 
