@@ -1082,7 +1082,6 @@ img {
 
 @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
 	.main-navigation li {
-<<<<<<< HEAD
 		padding-top: 15px;
 		padding-bottom: 15px;
 	}
@@ -1091,27 +1090,15 @@ img {
 		padding-top: 36px;
 		padding-bottom: 36px;
 	}
-=======
-	padding-top: 15px;
-	padding-bottom: 15px;
-}
 
-.footer-contacts {
+	.footer-contacts {
 	padding-top: 47px;
 	padding-bottom: 47px;
-}
-
-.found-sorting b {
-	padding-top: 30px;
-	padding-bottom: 30px;
-}
-}
-
->>>>>>> 7b9e1b7ae40d73598361df207204c2983c085f4b
+	}
 
 	.found-sorting b {
-		padding-top: 30px;
-		padding-bottom: 30px;
+	padding-top: 30px;
+	padding-bottom: 30px;
 	}
 
 	.date-checkin label {
