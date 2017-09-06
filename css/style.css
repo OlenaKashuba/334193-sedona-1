@@ -299,6 +299,7 @@ img {
 	width: 570px;
 	margin: 0 auto;
 	text-align: center;
+	position: relative;
 }
 
 .hotel-search-text {
@@ -353,22 +354,17 @@ img {
 	padding-bottom: 30px;
 }
 
+.hotel-form-hide {
+	transform: translateY(5000px);
+}
+
 		/* HOTEL SEARCH FORM */
-
-.map {
-	position: relative;
-}
-
-.map img {
-	display: inline-block;
-	vertical-align: top;
-}
 
 .hotel-search-form {
 	box-sizing: border-box;
 	position: absolute;
-	top: 0px;
-	left: 315px;
+	bottom: -395px;
+	left: 0;
 	z-index: 1;
 	width: 570px;
 	margin: 0 auto;
@@ -378,6 +374,7 @@ img {
 	padding-bottom: 55px;
 	background-color: #ffffff;
 	color: #000000;
+	transition: 0.5s;
 }
 
 .hotel-search-form p {
@@ -532,6 +529,19 @@ img {
 	fill: #81b3d2;
 }
 
+		/* MAP */
+.map {
+	overflow: hidden;
+}
+.map iframe {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.map-background {
+	background: url("../img/map.jpg") center no-repeat;
+}
+
 		/* HOTELS PAGE */
 		/* FILTERS  */
 
@@ -549,6 +559,7 @@ img {
 .filters-form {
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
 .filters-form fieldset {
@@ -636,6 +647,12 @@ img {
 
 .filters-form .filters-housing-type {
 	flex-grow: 1;
+}
+
+.filer-and-button {
+	display: flex;
+	flex-direction: column;
+	flex-shrink: 0;
 }
 
 .filters-range {
@@ -754,12 +771,6 @@ img {
 .btn-show:focus {
 	color: #000000;
 	background-color: #ffffff;
-	outline: none;
-}
-
-.btn-show:active {
-	color: (0,0,0,0.5);
-	background-color: rgba(255,255,255,0.5);
 	outline: none;
 }
 
