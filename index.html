@@ -5,7 +5,7 @@
 	<title>Седона - Visit Sedona</title>
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
 	<link href="css/normalize.css" rel="stylesheet">
-	<link href="css/style.css" rel="stylesheet">
+	<link href="css/style.min.css" rel="stylesheet">
 </head>
 <body>
 	<div class="container">
@@ -18,16 +18,16 @@
 			</a>
 			<nav class="main-navigation">
 				<ul>
-					<li class="text-left">
+					<li>
 						<a class="active">Информация</a>
 					</li>
-					<li class="text-left">
+					<li>
 						<a href="#">Фото и видео</a>
 					</li>
-					<li class="text-right">
+					<li >
 						<a href="#">Карта штата</a>
 					</li>
-					<li class="text-right">
+					<li>
 						<a href="hotels.html">Гостиницы</a>
 					</li>
 				</ul>
@@ -43,25 +43,24 @@
 			</section>
 
 		<!-- PROMO TEXT -->
+
 			<section class="advantages">
 				<section class="promo-description">
-					<div class="promo-text">
-						<h3> Седона &mdash; небольшой городок в Аризоне, заслуживающий большего!</h3>
+					<h3> Седона &mdash; небольшой городок в Аризоне, заслуживающий большего!</h3>
 
-						<p> Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон! </p>
-					</div>
+					<p> Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон! </p>
 				</section>
 
 		<!-- ADVANTAGE 1, PHOTO -->
 
-				<div class="advantage-top">
+				<div class="advantage-photo">
 					<section class="advantage">
 						<h2 class="visually-hidden"> Преимущество Седоны №1 </h2>
 						<h3>Настоящий городок</h3>
 						<p class="advantage-number">№1</p>
 						<p>Седона - не аттракцион для туристов, там&nbsp;течет&nbsp;своя жизнь</p>
 					</section>
-					<figure class="advantage-photo-right">
+					<figure class="photo">
 						<img src="img/photo-right.jpg" width="800" height="256" alt="Красивый жилой городок">
 					</figure>
 				</div>
@@ -90,8 +89,8 @@
 
 		<!-- PHOTO, ADVANTAGE 2 -->
 
-				<div class="advantage-bottom">
-					<figure class="advantage-photo-left">
+				<div class="advantage-photo">
+					<figure class="photo">
 						<img src="img/photo-left.jpg" width="800" height="256" alt="Мост дьявола">
 					</figure>
 					<section class="advantage">
@@ -149,7 +148,6 @@
 							<span class="visually-hidden"> Календарь</span> </button>
 						</p>
 
-
 						<p class="date-checkout"> <label for="date-checkout">Дата выезда:</label>
 							<input class="date-checkout" type="text" name="date-checkout" id="date-checkout" placeholder="4 июля 2017">
 							<button type="button" class="btn-calendar">
@@ -157,15 +155,12 @@
 							<span class="visually-hidden"> Календарь</span> </button>
 						</p>
 
-
 						<div class="numbers">
 							<p class="number-adults"> <label for="number-adults">Взрослые:</label>
 								<button type="button" class="btn-number"> — </button>
 								<input class="number-adults" type="text" name="number-adults" id="number-adults"  placeholder="2">
 								<button type="button" class="btn-number"> + </button>
 							</p>
-
-
 
 							<p class="number-children"> <label for="number-children">Дети:</label>
 								<button type="button" class="btn-number"> — </button>
@@ -183,7 +178,7 @@
 		<!-- MAP -->
 
 			<article class="map">
-				<iframe class="map-background" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d26187.975683675024!2d-111.79594825170956!3d34.868865145048275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z0KHQtdC00L7QvdCwINGG0LXQvdGC0YAg0LPQvtGA0L7QtNCw!5e0!3m2!1sru!2sru!4v1502615035913" width="1200" height="593" style="border:0" allowfullscreen></iframe>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d26187.975683675024!2d-111.79594825170956!3d34.868865145048275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z0KHQtdC00L7QvdCwINGG0LXQvdGC0YAg0LPQvtGA0L7QtNCw!5e0!3m2!1sru!2sru!4v1502615035913" width="1200" height="593" style="border:0" allowfullscreen></iframe>
 			</article>
 
 		</main>
@@ -217,6 +212,6 @@
 		</footer>
 
 	</div>
-	<script src="js/script.js"></script>
+	<script src="js/script.min.js"></script>
 </body>
 </html>

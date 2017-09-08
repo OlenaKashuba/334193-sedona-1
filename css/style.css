@@ -73,20 +73,21 @@ img {
 	transform: translate(-50%);
 }
 
-
 .main-navigation li {
 	width: 240px;
 }
 
-.main-navigation li:nth-child(2) {
+.main-navigation li:nth-child(4n+2) {
 	margin-right: 94px;
 }
 
-.main-navigation .text-left {
+.main-navigation li:nth-child(4n+1),
+.main-navigation li:nth-child(4n+2) {
 	text-align: left;
 }
 
-.main-navigation .text-right {
+.main-navigation li:nth-child(4n+3),
+.main-navigation li:nth-child(4n) {
 	text-align: right;
 }
 
@@ -123,18 +124,16 @@ img {
 
 .promo-description {
 	box-sizing: border-box;
+	width: 500px;
 	min-height: 216px;
-	line-height: 26px;
+	margin: 0 auto;
 	padding-top: 60px;
 	padding-bottom: 50px;
+	line-height: 26px;
 	text-align: center;
 	background-color: #ffffff;
 }
 
-.promo-text {
-	width: 500px;
-	margin: 0 auto;
-}
 
 .promo-description h3 {
 	margin: 0;
@@ -149,8 +148,7 @@ img {
 
 		/* ADVANTAGES, RECOMENDATIONS */
 
-.advantage-top,
-.advantage-bottom {
+.advantage-photo {
 	display: flex;
 	background-color: #81b3d2;
 }
@@ -160,8 +158,7 @@ img {
 	margin: 0;
 }
 
-.advantage-top .advantage,
-.advantage-bottom .advantage {
+.advantage-photo .advantage {
 	box-sizing: border-box;
 	width: 400px;
 	min-height: 256px;
@@ -193,9 +190,11 @@ img {
 	margin-left: 4px;
 	vertical-align: middle;
 }
+.advantage-photo figure {
+	margin: 0;
+}
 
-.advantage-photo-right img,
-.advantage-photo-left img {
+.photo img {
 	display: inline-block;
 	vertical-align: top;
 }
@@ -266,8 +265,6 @@ img {
 	padding-right: 55px;
 }
 
-
-
 		/* HOTEL SEARCH */
 
 .hotel-search {
@@ -301,12 +298,11 @@ img {
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: bold;
-
+	font-family: "PT Sans", Arial, sans-serif;
 	text-align: center;
 	color: #ffffff;
 	background-color: #766357;
 	border: none;
-
 	text-transform: uppercase;
 	cursor: pointer;
 }
@@ -329,8 +325,13 @@ img {
 	padding-bottom: 30px;
 }
 
+.hotel-search .btn:active {
+	padding-right: 0;
+	padding-left: 0;
+}
+
 .hotel-form-hide {
-	transform: translateY(5000px);
+	transform: translateX(-3000px);
 }
 
 		/* HOTEL SEARCH FORM */
@@ -505,16 +506,14 @@ img {
 }
 
 		/* MAP */
-.map {
-	overflow: hidden;
-}
+
 .map iframe {
 	display: inline-block;
 	vertical-align: top;
 }
 
-.map-background {
-	background: url("../img/map.jpg") center no-repeat;
+.map {
+	background: #c7dfab url("../img/map.jpg") center no-repeat;
 }
 
 		/* HOTELS PAGE */
@@ -792,7 +791,7 @@ img {
 	margin-right: 30px;
 }
 
-.found-sorting-item:last-child  {
+.found-sorting-item:last-child {
 	margin-right: 0px;
 }
 
@@ -1077,14 +1076,9 @@ img {
 		padding-bottom: 36px;
 	}
 
-	.footer-contacts {
-	padding-top: 47px;
-	padding-bottom: 47px;
-	}
-
 	.found-sorting b {
-	padding-top: 30px;
-	padding-bottom: 30px;
+		padding-top: 30px;
+		padding-bottom: 30px;
 	}
 
 	.date-checkin label {
