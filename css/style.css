@@ -339,7 +339,7 @@ img {
 .hotel-search-form {
 	box-sizing: border-box;
 	position: absolute;
-	bottom: -395px;
+	top: 241px;
 	left: 0;
 	z-index: 1;
 	width: 570px;
