@@ -330,10 +330,6 @@ img {
 	padding-left: 0;
 }
 
-.hotel-form-hide {
-	transform: translateX(-3000px);
-}
-
 		/* HOTEL SEARCH FORM */
 
 .hotel-search-form {
@@ -351,6 +347,10 @@ img {
 	background-color: #ffffff;
 	color: #000000;
 	transition: 0.5s;
+}
+
+.hotel-form-hide {
+	transform: translateX(-3000px);
 }
 
 .hotel-search-form p {
